@@ -21,27 +21,40 @@ function getComputerChoice () {
 // Step 2:
 // Write a function that plays single round of Rock Paper Scissors
 // The function has two parametars: playerSelection, computerSelection
-// Function returns string: 'You win', or 'You loose'
+// Function returns string: 'You win', or 'You lose'
 // playerSelection parametar is case insensitive!
 
 function singleRound (playerSelection, computerSelection) {
     let tie= 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + 'it\'s a tie.';
-    let rockVSpaper= 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You lose.'
-    let rockVSscissors = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You win.'
-    let paperVSscissors = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You lose.'
-    let paperVSrock = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You win.'
-    let scissorsVSrock = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You lose.'
-    let scissorsVSpaper ='You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You win.'
-    //  computerSelection= getComputerChoice();
-    // playerSelection()= playerSelection.toLowerCase();
-    // if (get computerSelection= rock, playerSelection= paper) {
-    //     return 'You win';
-    // } else if (get computerSelection= scissors, playerSelection= paper) {
-    //     return 'You loose';
-    // } else {
-    //     return 'nedovrseno';
-    // }
+    let rockVSpaper= 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You lose.';
+    let rockVSscissors = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You win.';
+    let paperVSscissors = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You lose.';
+    let paperVSrock = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You win.';
+    let scissorsVSrock = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You lose.';
+    let scissorsVSpaper ='You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You win.';
+
+    if (playerSelection === computerSelection) {
+        return tie;
+    } else if (playerSelection === 'Rock') && (computerSelection === 'Paper') {
+        return rockVSpaper;
+    } else if (playerSelection === 'Rock') && (computerSelection === 'Scissors') {
+        return rockVSscissors;
+    } else if (playerSelection === 'Paper') && (computerSelection === 'Scissors') {
+        return paperVSscissors;
+    } else if (playerSelection === 'Paper') && (computerSelection === 'Rock') {
+        return paperVSrock;
+    } else if (playerSelection === 'Scissors') && (computerSelection === 'Rock') {
+        return scissorsVSrock;
+    } else if (playerSelection === 'Scissors') && (computerSelection === 'Paper') {
+        return scissorsVSpaper;
+    }
+
 }
+//test
+const playerSelection = 'Rock';
+const computerSelection= getComputerChoice ();
+console.log(singleRound(playerSelection, computerSelection);
+
 
 // Note:
 
