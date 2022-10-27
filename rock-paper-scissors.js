@@ -2,6 +2,21 @@
 // Create function getComputerChoice 
 // make the finction choose 'Rock', 'Paper', or 'Scissors'
 // Test in console
+function getComputerChoice () {
+    let rock= 'Rock';
+    let paper= 'Paper';
+    let scissors= 'Scissors';
+    let randomChoice= Math.random();
+
+    if (randomChoice <= 0.33) {
+        return rock;
+    } else if (randomChoice <= 0.66) {
+        return paper;
+    } else {
+        return scissors;
+    }
+}
+
 
 // Step 2:
 // Write a function that plays single round of Rock Paper Scissors
