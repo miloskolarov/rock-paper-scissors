@@ -24,6 +24,25 @@ function getComputerChoice () {
 // Function returns string: 'You win', or 'You loose'
 // playerSelection parametar is case insensitive!
 
+function singleRound (playerSelection, computerSelection) {
+    let tie= 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + 'it\'s a tie.';
+    let rockVSpaper= 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You lose.'
+    let rockVSscissors = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You win.'
+    let paperVSscissors = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You lose.'
+    let paperVSrock = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You win.'
+    let scissorsVSrock = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You lose.'
+    let scissorsVSpaper ='You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You win.'
+    //  computerSelection= getComputerChoice();
+    // playerSelection()= playerSelection.toLowerCase();
+    // if (get computerSelection= rock, playerSelection= paper) {
+    //     return 'You win';
+    // } else if (get computerSelection= scissors, playerSelection= paper) {
+    //     return 'You loose';
+    // } else {
+    //     return 'nedovrseno';
+    // }
+}
+
 // Note:
 
 // return the results of this function call, not console.log() them
