@@ -25,13 +25,13 @@ function getComputerChoice () {
 // playerSelection parametar is case insensitive!
 
 function singleRound (playerSelection, computerSelection) {
-    let tie= 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + 'it\'s a tie.';
-    let rockVSpaper= 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You lose.';
-    let rockVSscissors = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You win.';
-    let paperVSscissors = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You lose.';
-    let paperVSrock = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You win.';
-    let scissorsVSrock = 'You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You lose.';
-    let scissorsVSpaper ='You selected'+ playerSelection + 'and opponent selected' + computerSelection + '.You win.';
+    let tie= 'You selected '+ playerSelection + 'and opponent selected ' + computerSelection + 'it\'s a tie.';
+    let rockVSpaper= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You lose.';
+    let rockVSscissors = 'You selected '+ playerSelection + 'and opponent selected ' + computerSelection + '.You win.';
+    let paperVSscissors = 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You lose.';
+    let paperVSrock = 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You win.';
+    let scissorsVSrock = 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You lose.';
+    let scissorsVSpaper ='You selected '+ playerSelection + 'and opponent selected ' + computerSelection + '.You win.';
 
     if (playerSelection === computerSelection) {
         return tie;
