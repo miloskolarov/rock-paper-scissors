@@ -25,13 +25,13 @@ function getComputerChoice () {
 // playerSelection parametar is case insensitive!
 
 function singleRound (playerSelection, computerSelection) {
-    let tie= 'You selected '+ playerSelection + 'and opponent selected ' + computerSelection + 'it\'s a tie.';
+    let tie= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.It\'s a tie.';
     let rockVSpaper= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You lose.';
-    let rockVSscissors = 'You selected '+ playerSelection + 'and opponent selected ' + computerSelection + '.You win.';
+    let rockVSscissors = 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You win.';
     let paperVSscissors = 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You lose.';
     let paperVSrock = 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You win.';
     let scissorsVSrock = 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You lose.';
-    let scissorsVSpaper ='You selected '+ playerSelection + 'and opponent selected ' + computerSelection + '.You win.';
+    let scissorsVSpaper ='You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You win.';
 
     if (playerSelection === computerSelection) {
         return tie;
@@ -50,6 +50,16 @@ function singleRound (playerSelection, computerSelection) {
     }
 
 }
+
+//Make playerSelection case insensitive 
+
+//This DOES NOT WORK, return latter.
+        // function capitalize(playerSelection) {
+        //     let lowerCase= playerSelection.toLowerCase();
+        //     let firstLatter= lowerCase.charAt(0).toUppercase() + lowerCase.slice(1);
+        //     return playerSelection;
+        // }
+
 //test
 const playerSelection = 'Rock';
 const computerSelection= getComputerChoice ();
