@@ -35,17 +35,17 @@ function singleRound (playerSelection, computerSelection) {
 
     if (playerSelection === computerSelection) {
         return tie;
-    } else if (playerSelection === 'Rock') && (computerSelection === 'Paper') {
+    } else if ((playerSelection === 'Rock') && (computerSelection === 'Paper')) {
         return rockVSpaper;
-    } else if (playerSelection === 'Rock') && (computerSelection === 'Scissors') {
+    } else if ((playerSelection === 'Rock') && (computerSelection === 'Scissors')) {
         return rockVSscissors;
-    } else if (playerSelection === 'Paper') && (computerSelection === 'Scissors') {
+    } else if ((playerSelection === 'Paper') && (computerSelection === 'Scissors')) {
         return paperVSscissors;
-    } else if (playerSelection === 'Paper') && (computerSelection === 'Rock') {
+    } else if ((playerSelection === 'Paper') && (computerSelection === 'Rock')) {
         return paperVSrock;
-    } else if (playerSelection === 'Scissors') && (computerSelection === 'Rock') {
+    } else if ((playerSelection === 'Scissors') && (computerSelection === 'Rock')) {
         return scissorsVSrock;
-    } else if (playerSelection === 'Scissors') && (computerSelection === 'Paper') {
+    } else if ((playerSelection === 'Scissors') && (computerSelection === 'Paper')) {
         return scissorsVSpaper;
     }
 
@@ -53,7 +53,7 @@ function singleRound (playerSelection, computerSelection) {
 //test
 const playerSelection = 'Rock';
 const computerSelection= getComputerChoice ();
-console.log(singleRound(playerSelection, computerSelection);
+console.log(singleRound(playerSelection, computerSelection));
 
 
 // Note:
