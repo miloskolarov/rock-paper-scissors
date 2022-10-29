@@ -44,7 +44,7 @@ function game () {
         console.log(singleRound(playerSelection, computerSelection));
         console.log("Player wins: " + playerWins);
         console.log("Computer wins: " + computerWins);
-        
+
 function singleRound (playerSelection, computerSelection) {
     let tie= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.It\'s a tie.';
     let rockVSpaper= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You lose.';
@@ -57,16 +57,22 @@ function singleRound (playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         return tie;
     } else if ((playerSelection === 'Rock') && (computerSelection === 'Paper')) {
+        computerWins++;
         return rockVSpaper;
     } else if ((playerSelection === 'Rock') && (computerSelection === 'Scissors')) {
+        playerWins++;
         return rockVSscissors;
     } else if ((playerSelection === 'Paper') && (computerSelection === 'Scissors')) {
+        computerWins++;
         return paperVSscissors;
     } else if ((playerSelection === 'Paper') && (computerSelection === 'Rock')) {
+        playerWins++;
         return paperVSrock;
     } else if ((playerSelection === 'Scissors') && (computerSelection === 'Rock')) {
+        computerWins++;
         return scissorsVSrock;
     } else if ((playerSelection === 'Scissors') && (computerSelection === 'Paper')) {
+        playerWins++;
         return scissorsVSpaper;
     }
 
