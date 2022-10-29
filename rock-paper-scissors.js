@@ -78,10 +78,10 @@ function singleRound (playerSelection, computerSelection) {
     //Does not work 
     if (playerWins > computerWins) {
         gameWinner= "You win!";
-    } else if (playerWins < computerWins) {
-        gameWinner= "Computer wins!";
-    } else {
+    } else if (playerWins === computerWins) {
         gameWinner= "It's a tie.";
+    } else {
+        gameWinner= "Computer wins!";
     }
 
 console.log("And the winner is: " + gameWinner)
@@ -99,7 +99,7 @@ console.log("And the winner is: " + gameWinner)
         // }
 
 //test
-
+game();
 
 
 
