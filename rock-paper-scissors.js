@@ -65,6 +65,14 @@ const playerSelection = 'Rock';
 const computerSelection= getComputerChoice ();
 console.log(singleRound(playerSelection, computerSelection));
 
+// Write new function called game
+// call playround function inside game function: Insert singleRound function inside game function
+// Add counters:roundsPlayed, playerWins, computerWins, gameWinner (let)
+// Use promt for player input 
+// Use console.log() to display the resut of each round and the winner 
+// Use loop to play 5 rounds- Use while loop
+
+
 
 // Note:
 
