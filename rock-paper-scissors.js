@@ -76,6 +76,14 @@ function singleRound (playerSelection, computerSelection) {
         return scissorsVSpaper;
     }
 
+    if (playerWins > computerWins) {
+        gameWinner= "You win!";
+    } else if (playerWins < computerWins) {
+        gameWinner= "Computer wins!";
+    } else {
+        gameWinner= "It's a tie.";
+    }
+
 }
 }
 }
