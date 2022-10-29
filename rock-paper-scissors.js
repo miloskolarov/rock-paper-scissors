@@ -75,7 +75,7 @@ function singleRound (playerSelection, computerSelection) {
         playerWins++;
         return scissorsVSpaper;
     }
-
+    //Does not work 
     if (playerWins > computerWins) {
         gameWinner= "You win!";
     } else if (playerWins < computerWins) {
@@ -84,6 +84,8 @@ function singleRound (playerSelection, computerSelection) {
         gameWinner= "It's a tie.";
     }
 
+console.log("And the winner is: " + gameWinner)
+    
 }
 }
 }
