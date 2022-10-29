@@ -24,6 +24,27 @@ function getComputerChoice () {
 // Function returns string: 'You win', or 'You lose'
 // playerSelection parametar is case insensitive!
 
+// Write new function called game
+// call playround function inside game function: Insert singleRound function inside game function
+// Add counters:roundsPlayed, playerWins, computerWins, gameWinner (let)
+// Use promt for player input 
+// Use console.log() to display the resut of each round and the winner 
+// Use loop to play 5 rounds- Use while loop
+
+function game () {
+    let roundsPlayed= 0;
+    let playerWins= 0;
+    let computerWins= 0;
+    let gameWinner= '';
+
+    while (roundsPlayed <5) {
+        roundsPlayed++;
+        playerSelection = prompt("Please type Rock, Paper, or Scissors.");
+        const computerSelection= getComputerChoice ();
+        console.log(singleRound(playerSelection, computerSelection));
+        console.log("Player wins: " + playerWins);
+        console.log("Computer wins: " + computerWins);
+        
 function singleRound (playerSelection, computerSelection) {
     let tie= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.It\'s a tie.';
     let rockVSpaper= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You lose.';
@@ -50,7 +71,8 @@ function singleRound (playerSelection, computerSelection) {
     }
 
 }
-
+}
+}
 //Make playerSelection case insensitive 
 
 //This DOES NOT WORK, return latter.
@@ -61,16 +83,9 @@ function singleRound (playerSelection, computerSelection) {
         // }
 
 //test
-const playerSelection = 'Rock';
-const computerSelection= getComputerChoice ();
-console.log(singleRound(playerSelection, computerSelection));
 
-// Write new function called game
-// call playround function inside game function: Insert singleRound function inside game function
-// Add counters:roundsPlayed, playerWins, computerWins, gameWinner (let)
-// Use promt for player input 
-// Use console.log() to display the resut of each round and the winner 
-// Use loop to play 5 rounds- Use while loop
+
+
 
 
 
