@@ -35,9 +35,9 @@ function game () {
     let roundsPlayed= 0;
     let playerWins= 0;
     let computerWins= 0;
-    let gameWinner= '';
+    let gameWinner= "";
 
-    while (roundsPlayed <5) {
+    while (roundsPlayed < 5) {
         roundsPlayed++;
         playerSelection = prompt("Please type Rock, Paper, or Scissors.");
         const computerSelection= getComputerChoice ();
@@ -76,6 +76,12 @@ function singleRound (playerSelection, computerSelection) {
         return scissorsVSpaper;
     }
     //Does not work 
+
+
+
+    
+}
+}
     if (playerWins > computerWins) {
         gameWinner= "You win!";
     } else if (playerWins === computerWins) {
@@ -84,10 +90,7 @@ function singleRound (playerSelection, computerSelection) {
         gameWinner= "Computer wins!";
     }
 
-console.log("And the winner is: " + gameWinner)
-    
-}
-}
+    console.log("And the winner is: " + gameWinner)
 }
 //Make playerSelection case insensitive 
 
