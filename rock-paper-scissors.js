@@ -75,7 +75,7 @@ function singleRound (playerSelection, computerSelection) {
         playerWins++;
         return scissorsVSpaper;
     }
-    //Does not work 
+   
 
 
 
