@@ -16,13 +16,38 @@ function getComputerChoice () {
 
     //Remove while loop and prompt
     //Add round win and game win
-          //  create div DOM for all results
-          //  create player win tracking DOM 
-          //  create computer win tracking DOM
-           //  create round win text DOM
-            //  create game win text DOM
+          
+          
+          
+           
+            
 
+//  create div DOM for all results
+const container= document.querySelector('#container');
+const resultsDiv= document.createElement('div');
+container.appendChild('resultsDiv');
 
+//  create player win tracking DOM 
+
+const playerWinText= document.createElement('p');
+playerWinText.textContent= "Players win: " + playerWins;
+resultsDiv.appendChild(playerWinText);
+
+//  create computer win tracking DOM
+
+const computerWinText= document.createElement('p');
+computeWinText.textContent= "Computer win: " + computeWins;
+resultsDiv.appendChild(computeWinText);
+
+//  create round win text DOM
+
+const roundWinText= document.createElement('p');
+resultsDiv.appendChild(roundWinText);
+
+//  create game win text DOM
+const gameWinText= document.createElement('p');
+gameWinText.textContent=  gameWinner;
+resultsDiv.appendChild(gameWinText);
 
 function game () {
     let roundsPlayed= 0;
