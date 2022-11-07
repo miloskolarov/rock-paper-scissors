@@ -1,7 +1,4 @@
-// Step 1:
-// Create function getComputerChoice 
-// make the finction choose 'Rock', 'Paper', or 'Scissors'
-// Test in console
+
 function getComputerChoice () {
     let rock= 'Rock';
     let paper= 'Paper';
@@ -17,25 +14,22 @@ function getComputerChoice () {
     }
 }
 
+    //Remove while loop and prompt
+    //Add round win and game win
+          //  create div DOM for all results
+          //  create player win tracking DOM 
+          //  create computer win tracking DOM
+           //  create round win text DOM
+            //  create game win text DOM
 
-// Step 2:
-// Write a function that plays single round of Rock Paper Scissors
-// The function has two parametars: playerSelection, computerSelection
-// Function returns string: 'You win', or 'You lose'
-// playerSelection parametar is case insensitive!
 
-// Write new function called game
-// call playround function inside game function: Insert singleRound function inside game function
-// Add counters:roundsPlayed, playerWins, computerWins, gameWinner (let)
-// Use promt for player input 
-// Use console.log() to display the resut of each round and the winner 
-// Use loop to play 5 rounds- Use while loop
 
 function game () {
     let roundsPlayed= 0;
     let playerWins= 0;
     let computerWins= 0;
     let gameWinner= "";
+
 
     while (roundsPlayed < 5) {
         roundsPlayed++;
@@ -76,9 +70,6 @@ function singleRound (playerSelection, computerSelection) {
         return scissorsVSpaper;
     }
    
-
-
-
     
 }
 }
@@ -92,32 +83,7 @@ function singleRound (playerSelection, computerSelection) {
 
     console.log("And the winner is: " + gameWinner)
 }
-//Make playerSelection case insensitive 
 
-//This DOES NOT WORK, return latter.
-        // function capitalize(playerSelection) {
-        //     let lowerCase= playerSelection.toLowerCase();
-        //     let firstLatter= lowerCase.charAt(0).toUppercase() + lowerCase.slice(1);
-        //     return playerSelection;
-        // }
-
-//test
 game();
 
 
-
-
-
-// Note:
-
-// return the results of this function call, not console.log() them
-
-// Step 3:
-
-// Write a new function called game()
-// Call the playRound function inside of game() function
-// to play a 5 round game that keeps score and report winner/looser
-
-        // Use loops...
-        // use console.log() to display the result 
-        // use prompt() to get input from the user 
