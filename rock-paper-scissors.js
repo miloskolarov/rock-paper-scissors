@@ -1,4 +1,5 @@
 
+//Get computer to choose randomly
 function getComputerChoice () {
     let rock= 'Rock';
     let paper= 'Paper';
@@ -13,14 +14,8 @@ function getComputerChoice () {
         return scissors;
     }
 }
-
-    //Remove while loop and prompt
-    //Add round win and game win
-          
-          
-          
-           
-            
+   
+//Play the game
 
 function game () {
     let roundsPlayed= 0;
@@ -28,6 +23,7 @@ function game () {
     let computerWins= 0;
     let gameWinner= "";
 
+//Conect player choices with buttons
 
 const buttons= document.querySelectorAll('button');
 buttons.forEach((button)=>{
@@ -39,7 +35,7 @@ buttons.forEach((button)=>{
     computerWinText.textContent= "Computer win: " + computerWins;})
  })
 
- 
+//Single round of the game:
 
 function singleRound (playerSelection, computerSelection) {
     let tie= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.It\'s a tie.';
@@ -113,11 +109,6 @@ const gameWinText= document.createElement('p');
 gameWinText.textContent=  gameWinner;
 resultsDiv.appendChild(gameWinText);
 }
-
-
-
-
-
 
 game();
 
