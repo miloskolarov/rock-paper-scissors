@@ -28,14 +28,8 @@ function game () {
     let computerWins= 0;
     let gameWinner= "";
 
+//Rework player selection
 
-    while (roundsPlayed < 5) {
-        roundsPlayed++;
-        playerSelection = prompt("Please type Rock, Paper, or Scissors.");
-        const computerSelection= getComputerChoice ();
-        console.log(singleRound(playerSelection, computerSelection));
-        console.log("Player wins: " + playerWins);
-        console.log("Computer wins: " + computerWins);
 
 function singleRound (playerSelection, computerSelection) {
     let tie= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.It\'s a tie.';
@@ -70,7 +64,7 @@ function singleRound (playerSelection, computerSelection) {
    
     
 }
-}
+
     if (playerWins > computerWins) {
         gameWinner= "You win!";
     } else if (playerWins === computerWins) {
