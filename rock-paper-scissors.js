@@ -1,5 +1,6 @@
 
 //Get computer to choose randomly
+
 function getComputerChoice () {
     let rock= 'Rock';
     let paper= 'Paper';
@@ -72,7 +73,6 @@ function singleRound (playerSelection, computerSelection) {
 }
 
 
-
     //  create div DOM for all results
 const container= document.querySelector('#container');
 const resultsDiv= document.createElement('div');
@@ -95,10 +95,7 @@ resultsDiv.appendChild(computerWinText);
 const roundWinText= document.createElement('p');
 resultsDiv.appendChild(roundWinText);
 
-//  create game win text DOM
-const gameWinText= document.createElement('p');
-gameWinText.textContent=  gameWinner;
-resultsDiv.appendChild(gameWinText);
+
 }
 
 game();
