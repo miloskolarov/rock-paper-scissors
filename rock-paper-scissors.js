@@ -39,6 +39,16 @@ function game () {
                 //Add text content to roundWinText
                 //Add text content to playerWinText
                 //Add text content to computeWinText
+const buttons= document.querySelectorAll('button');
+buttons.forEach((button)=>{
+    button.addEventListener('click', ()=> {
+    playerSelection=button.className;
+    const computerSelection= getComputerChoice;
+    roundWinText.textContent=(singleRound(playerSelection,computerSelection));
+    playerWinText.textContent= "Players win: " + playerWins;
+    computerWinText.textContent= "Computer win: " + computerWins;})
+ })
+
 function singleRound (playerSelection, computerSelection) {
     let tie= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.It\'s a tie.';
     let rockVSpaper= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You lose.';
@@ -98,8 +108,8 @@ resultsDiv.appendChild(playerWinText);
 //  create computer win tracking DOM
 
 const computerWinText= document.createElement('p');
-computeWinText.textContent= "Computer win: " + computeWins;
-resultsDiv.appendChild(computeWinText);
+computerWinText.textContent= "Computer win: " + computerWins;
+resultsDiv.appendChild(computerWinText);
 
 //  create round win text DOM
 
