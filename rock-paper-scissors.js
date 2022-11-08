@@ -28,26 +28,18 @@ function game () {
     let computerWins= 0;
     let gameWinner= "";
 
-//Rework player selection
-    //Select all buttons
-    //For each button method ()
-    //  Arrow functio
-        //Add event listener for button
-            //Method, 'click' => {}
-                //playerSelection= button class
-                //Computer selection= call first function
-                //Add text content to roundWinText
-                //Add text content to playerWinText
-                //Add text content to computeWinText
+
 const buttons= document.querySelectorAll('button');
 buttons.forEach((button)=>{
     button.addEventListener('click', ()=> {
     playerSelection=button.className;
-    const computerSelection= getComputerChoice;
+    const computerSelection= getComputerChoice();
     roundWinText.textContent=(singleRound(playerSelection,computerSelection));
     playerWinText.textContent= "Players win: " + playerWins;
     computerWinText.textContent= "Computer win: " + computerWins;})
  })
+
+ 
 
 function singleRound (playerSelection, computerSelection) {
     let tie= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.It\'s a tie.';
