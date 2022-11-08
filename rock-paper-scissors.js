@@ -71,15 +71,6 @@ function singleRound (playerSelection, computerSelection) {
     
 }
 
-    if (playerWins > computerWins) {
-        gameWinner= "You win!";
-    } else if (playerWins === computerWins) {
-        gameWinner= "It's a tie.";
-    } else {
-        gameWinner= "Computer wins!";
-    }
-
-    console.log("And the winner is: " + gameWinner)
 
 
     //  create div DOM for all results
