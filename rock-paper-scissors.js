@@ -1,4 +1,3 @@
-
 //Get computer to choose randomly
 
 function getComputerChoice () {
@@ -68,12 +67,11 @@ function singleRound (playerSelection, computerSelection) {
         playerWins++;
         return scissorsVSpaper;
     }
-   
     
 }
 
+//  create div DOM for all results
 
-    //  create div DOM for all results
 const container= document.querySelector('#container');
 const resultsDiv= document.createElement('div');
 container.appendChild(resultsDiv);
@@ -95,9 +93,6 @@ resultsDiv.appendChild(computerWinText);
 const roundWinText= document.createElement('p');
 resultsDiv.appendChild(roundWinText);
 
-
 }
 
 game();
-
-
