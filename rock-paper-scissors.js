@@ -29,8 +29,16 @@ function game () {
     let gameWinner= "";
 
 //Rework player selection
-
-
+    //Select all buttons
+    //For each button method ()
+    //  Arrow functio
+        //Add event listener for button
+            //Method, 'click' => {}
+                //playerSelection= button class
+                //Computer selection= call first function
+                //Add text content to roundWinText
+                //Add text content to playerWinText
+                //Add text content to computeWinText
 function singleRound (playerSelection, computerSelection) {
     let tie= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.It\'s a tie.';
     let rockVSpaper= 'You selected '+ playerSelection + ' and opponent selected ' + computerSelection + '.You lose.';
@@ -74,11 +82,9 @@ function singleRound (playerSelection, computerSelection) {
     }
 
     console.log("And the winner is: " + gameWinner)
-}
 
 
-
-//  create div DOM for all results
+    //  create div DOM for all results
 const container= document.querySelector('#container');
 const resultsDiv= document.createElement('div');
 container.appendChild(resultsDiv);
@@ -104,6 +110,11 @@ resultsDiv.appendChild(roundWinText);
 const gameWinText= document.createElement('p');
 gameWinText.textContent=  gameWinner;
 resultsDiv.appendChild(gameWinText);
+}
+
+
+
+
 
 
 game();
